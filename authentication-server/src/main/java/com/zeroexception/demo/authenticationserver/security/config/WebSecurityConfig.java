@@ -33,10 +33,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         .antMatchers(HttpMethod.OPTIONS).permitAll()
         .antMatchers("/v1/info" ).permitAll()
         .antMatchers("/v1/user" ).authenticated()
-//        .antMatchers(HttpMethod.GET, "/**" ).permitAll()
-
-//        .antMatchers(HttpMethod.POST, "/**" ).permitAll()
-//        .antMatchers("/**").denyAll()
         .and()
         .httpBasic()
         .disable()
