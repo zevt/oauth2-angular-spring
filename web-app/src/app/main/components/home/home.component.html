@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-sm-offset-3">
+    <h2>Great, you successfully logged in </h2>
+    <div>
+      <button (click)="getInfo()">Get Info</button>
+    </div>
+    <div>
+      <button (click)="getUser()">Get User</button>
+    </div>
+    <div *ngIf="user != null">{{user}}</div>
+  </div>
+</div>
